@@ -8,7 +8,7 @@ emmm,事情是这个样的,上次不是修改了[photopicker](https://github.com
 
 ##### 普通模式
 
-**/
+````java
 
 public interface PhotoEditActionListener {
     void deleteImage(int position);
@@ -20,4 +20,4 @@ public interface PhotoEditActionListener {
     String loadImage(String image, int position, ImageView iv);
 
 }
-/**
+````java
