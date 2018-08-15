@@ -35,6 +35,6 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
             android:padding="10dp"
-            android:src="@mipmap/bga_pp_ic_download" />
+            android:src="@mipmap/ic_photo_down" />
     </LinearLayout>
 </RelativeLayout>
