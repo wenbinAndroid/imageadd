@@ -1,4 +1,4 @@
-package com.mrz.imageadd;
+package com.mrz.imageadd.data;
 
 /**
  * @author Mrz

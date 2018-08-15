@@ -11,7 +11,7 @@ import com.bumptech.glide.request.RequestOptions;
 import com.mrz.demo.pre.PreViewActivity;
 import com.mrz.imageadd.AddPhotoManage;
 import com.mrz.imageadd.AddPhotoView;
-import com.mrz.imageadd.PhotoResourceListener;
+import com.mrz.imageadd.listener.PhotoResourceListener;
 import com.squareup.leakcanary.RefWatcher;
 
 import java.util.ArrayList;

@@ -1,6 +1,8 @@
-package com.mrz.imageadd;
+package com.mrz.imageadd.data;
 
 import android.os.AsyncTask;
+
+import com.mrz.imageadd.adapter.AddPhotoAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

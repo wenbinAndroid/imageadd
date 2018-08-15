@@ -1,4 +1,4 @@
-package com.mrz.imageadd;
+package com.mrz.imageadd.adapter;
 
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
@@ -8,6 +8,10 @@ import android.widget.ImageView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
+import com.mrz.imageadd.AddPhotoManage;
+import com.mrz.imageadd.R;
+import com.mrz.imageadd.data.PhotoInfo;
+import com.mrz.imageadd.listener.PhotoListener;
 
 import java.util.List;
 

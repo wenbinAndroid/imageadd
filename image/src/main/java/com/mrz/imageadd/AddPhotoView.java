@@ -8,6 +8,8 @@ import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
 
+import com.mrz.imageadd.data.PhotoInfo;
+
 /**
  * @author Mrz
  * @date 2018/8/9 10:39

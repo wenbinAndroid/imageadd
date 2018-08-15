@@ -8,6 +8,12 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.mrz.imageadd.adapter.AddPhotoAdapter;
+import com.mrz.imageadd.data.AddPhotoTask;
+import com.mrz.imageadd.data.PhotoInfo;
+import com.mrz.imageadd.listener.PhotoEditActionListener;
+import com.mrz.imageadd.listener.PhotoListener;
+import com.mrz.imageadd.listener.PhotoResourceListener;
 
 import java.util.ArrayList;
 import java.util.List;

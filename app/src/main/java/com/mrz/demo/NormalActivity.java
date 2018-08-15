@@ -16,7 +16,7 @@ import com.bumptech.glide.request.RequestOptions;
 import com.mrz.demo.pre.PreViewActivity;
 import com.mrz.imageadd.AddPhotoManage;
 import com.mrz.imageadd.AddPhotoView;
-import com.mrz.imageadd.PhotoEditActionListener;
+import com.mrz.imageadd.listener.PhotoEditActionListener;
 import com.squareup.leakcanary.RefWatcher;
 import com.yanzhenjie.permission.Permission;
 import com.yanzhenjie.permission.quick.PermissionUtils;
