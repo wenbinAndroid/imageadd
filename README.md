@@ -77,15 +77,15 @@ List<String> imageList=new Arrays<>();
 ````
 #### 自定义的属性
 
-name | format
------------- | -------------
-add_photo_max_count | integer
-add_photo_horizontal_count | integer 
-add_photo_edit_mode | boolean 
-add_photo_add_icon | reference 
-add_photo_horizontal_margin | dimension 
-add_photo_vertical_margin | dimension 
-add_photo_delete_icon | reference 
+name | format | description
+------------ | ------------- | -------------
+add_photo_max_count | integer | 最大显示张数(默认6张)
+add_photo_horizontal_count | integer | 一行显示多少张(默认4张)
+add_photo_edit_mode | boolean | 是否是编辑模式(默认是)
+add_photo_add_icon | reference | 添加按钮的图标(默认自带)
+add_photo_horizontal_margin | dimension | 每个item的水平间距(默认10dp)
+add_photo_vertical_margin | dimension | 每行的垂直间距(默认10dp)
+add_photo_delete_icon | reference | 删除按钮的图标(默认自带)
 
 
 #### 思路
