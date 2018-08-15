@@ -25,7 +25,7 @@ addView.setPhotoEditActionListener(new PhotoEditActionListener() {
             @Override
             public void previewImage(int position, List<String> image) {
                 //预览图片
-                Intent intent = new Intent(this, PreViewActivity.class);
+                Intent intent = new Intent(NormalActivity.this, PreViewActivity.class);
                 intent.putStringArrayListExtra(PreViewActivity.IMAGE, (ArrayList<String>) image);
                 intent.putExtra(PreViewActivity.POSITION, position);
                 startActivity(intent);
@@ -42,7 +42,7 @@ addView.setPhotoEditActionListener(new PhotoEditActionListener() {
                 //加载图片
                RequestOptions options = new RequestOptions();
                options.placeholder(R.mipmap.ic_loading).error(R.mipmap.ic_loading);
-               Glide.with(this).load(image).apply(options).into(iv);
+               Glide.with(NormalActivity.this).load(image).apply(options).into(iv);
               
             }
         });
@@ -59,14 +59,14 @@ List<String> imageList=new Arrays<>();
                      String reallyImage = imageList.get(position);
                      RequestOptions options = new RequestOptions();
                      options.placeholder(R.mipmap.ic_loading).error(R.mipmap.ic_loading);
-                     Glide.with(this).load(reallyImage).apply(options).into(iv);
+                     Glide.with(LoadActivity.this).load(reallyImage).apply(options).into(iv);
                      return reallyImage;
                     }
 
                     @Override
                     public void previewImage(int position, List<String> image) {
                     //预览图片
-                    Intent intent = new Intent(this, PreViewActivity.class);
+                    Intent intent = new Intent(LoadActivity.this, PreViewActivity.class);
                     intent.putStringArrayListExtra(PreViewActivity.IMAGE, (ArrayList<String>) image);
                     intent.putExtra(PreViewActivity.POSITION, position);
                     startActivity(intent);
