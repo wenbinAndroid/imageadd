@@ -20,4 +20,4 @@ public interface PhotoEditActionListener {
     String loadImage(String image, int position, ImageView iv);
 
 }
-````java
+java````
