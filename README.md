@@ -77,11 +77,15 @@ List<String> imageList=new Arrays<>();
 ````
 #### 自定义的属性
 
-第一表头 | 第二表头
+name | format
 ------------ | -------------
-第一单元格内容 | 第二单元格内容
-第一列内容 | 第二列内容 
-
+add_photo_max_count | integer
+add_photo_horizontal_count | integer 
+add_photo_edit_mode | boolean 
+add_photo_add_icon | reference 
+add_photo_horizontal_margin | dimension 
+add_photo_vertical_margin | dimension 
+add_photo_delete_icon | reference 
 
 
 #### 思路
