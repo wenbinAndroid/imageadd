@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.mrz.demo;
+package com.mrz.demo.loader;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;

@@ -8,7 +8,9 @@
 
     <com.mrz.imageadd.AddPhotoView
         android:id="@+id/iv_add"
+        app:add_photo_add_icon="@mipmap/ic_add"
         android:layout_width="match_parent"
+        app:add_photo_delete_icon="@mipmap/ic_delete"
         android:layout_height="wrap_content"
         app:add_photo_edit_mode="true"
         app:add_photo_horizontal_count="4"

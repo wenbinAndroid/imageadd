@@ -13,11 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.mrz.demo;
+package com.mrz.demo.loader;
 
 import android.content.Context;
 import android.graphics.Point;
 
+import com.mrz.demo.R;
 import com.zhihu.matisse.MimeType;
 import com.zhihu.matisse.filter.Filter;
 import com.zhihu.matisse.internal.entity.IncapableCause;
@@ -27,13 +28,13 @@ import com.zhihu.matisse.internal.utils.PhotoMetadataUtils;
 import java.util.HashSet;
 import java.util.Set;
 
-class GifSizeFilter extends Filter {
+public class GifSizeFilter extends Filter {
 
     private int mMinWidth;
     private int mMinHeight;
     private int mMaxSize;
 
-    GifSizeFilter(int minWidth, int minHeight, int maxSizeInBytes) {
+    public GifSizeFilter(int minWidth, int minHeight, int maxSizeInBytes) {
         mMinWidth = minWidth;
         mMinHeight = minHeight;
         mMaxSize = maxSizeInBytes;
@@ -51,9 +52,11 @@ class GifSizeFilter extends Filter {
         if (!needFiltering(context, item))
             return null;
 
-        Point size = PhotoMetadataUtils.getBitmapBound(context.getContentResolver(), item.getContentUri());
+        Point size = PhotoMetadataUtils.getBitmapBound(context.getContentResolver(), item
+                .getContentUri());
         if (size.x < mMinWidth || size.y < mMinHeight || item.size > mMaxSize) {
-            return new IncapableCause(IncapableCause.DIALOG, context.getString(R.string.error_gif, mMinWidth,
+            return new IncapableCause(IncapableCause.DIALOG, context.getString(R.string
+                            .error_gif, mMinWidth,
                     String.valueOf(PhotoMetadataUtils.getSizeInMB(mMaxSize))));
         }
         return null;

@@ -50,7 +50,7 @@ public class LoadActivity extends AppCompatActivity implements PhotoResourceList
     }
 
     @Override
-    public String showPhoto(String image, int position, ImageView iv) {
+    public String loadImage(String image, int position, ImageView iv) {
         //这里的image是空的,要从数据源自己获取
         String reallyImage = imageList.get(position);
         RequestOptions options = new RequestOptions();
@@ -60,7 +60,7 @@ public class LoadActivity extends AppCompatActivity implements PhotoResourceList
     }
 
     @Override
-    public void lookImage(int position, List<String> image) {
+    public void previewImage(int position, List<String> image) {
         Intent intent = new Intent(this, PreViewActivity.class);
         intent.putStringArrayListExtra(PreViewActivity.IMAGE, (ArrayList<String>) image);
         intent.putExtra(PreViewActivity.POSITION, position);

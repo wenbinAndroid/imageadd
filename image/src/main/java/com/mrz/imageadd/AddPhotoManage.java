@@ -111,9 +111,9 @@ public class AddPhotoManage implements PhotoListener, BaseQuickAdapter.OnItemChi
     @Override
     public void photoResource(String text, int position, ImageView iv) {
         if (mPhotoEditActionListener != null) {
-            mPhotoEditActionListener.showPhoto(text, position, iv);
+            mPhotoEditActionListener.loadImage(text, position, iv);
         } else if (mPhotoResourceListener != null) {
-            String image = mPhotoResourceListener.showPhoto(text, position, iv);
+            String image = mPhotoResourceListener.loadImage(text, position, iv);
             if (mPhotoList == null) {
                 mPhotoList = new ArrayList<>();
             }
@@ -165,10 +165,10 @@ public class AddPhotoManage implements PhotoListener, BaseQuickAdapter.OnItemChi
                 if (list.size() < mInfo.maxCount) {
                     list.remove(list.size() - 1);
                 }
-                mPhotoEditActionListener.lookImage(position, list);
+                mPhotoEditActionListener.previewImage(position, list);
             } else if (mPhotoResourceListener != null) {
 
-                mPhotoResourceListener.lookImage(position, mPhotoList);
+                mPhotoResourceListener.previewImage(position, mPhotoList);
             }
         }
     }

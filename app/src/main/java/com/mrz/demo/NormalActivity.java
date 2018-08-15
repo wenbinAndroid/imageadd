@@ -13,6 +13,8 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.mrz.demo.loader.GifSizeFilter;
+import com.mrz.demo.loader.Glide4Engine;
 import com.mrz.demo.pre.PreViewActivity;
 import com.mrz.imageadd.AddPhotoManage;
 import com.mrz.imageadd.AddPhotoView;
@@ -52,28 +54,24 @@ public class NormalActivity extends AppCompatActivity implements
 
 
     @Override
-    public String showPhoto(String image, int position, ImageView iv) {
+    public void loadImage(String image, int position, ImageView iv) {
         RequestOptions options = new RequestOptions();
         options.placeholder(R.mipmap.ic_loading).error(R.mipmap.ic_loading);
         Glide.with(this).load(image).apply(options).into(iv);
-        return null;
     }
 
     @Override
-    public void lookImage(int position, List<String> image) {
+    public void previewImage(int position, List<String> image) {
         Intent intent = new Intent(this, PreViewActivity.class);
         intent.putStringArrayListExtra(PreViewActivity.IMAGE, (ArrayList<String>) image);
         intent.putExtra(PreViewActivity.POSITION, position);
         startActivity(intent);
     }
-
     private static final String TAG = "NormalActivity";
-
     @Override
     public void deleteImage(int position) {
         Log.e(TAG, "deleteImage: " + position);
     }
-
 
     @Override
     public void addImage(AddPhotoManage manage, int position) {
