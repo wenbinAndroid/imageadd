@@ -24,7 +24,7 @@ addView.setPhotoEditActionListener(new PhotoEditActionListener() {
 
             @Override
             public void previewImage(int position, List<String> image) {
-                //预览图片
+                //预览图片 这个界面是根据网易的写的..
                 Intent intent = new Intent(NormalActivity.this, PreViewActivity.class);
                 intent.putStringArrayListExtra(PreViewActivity.IMAGE, (ArrayList<String>) image);
                 intent.putExtra(PreViewActivity.POSITION, position);
@@ -65,7 +65,7 @@ List<String> imageList=new Arrays<>();
 
                     @Override
                     public void previewImage(int position, List<String> image) {
-                    //预览图片
+                    //预览图片   这个界面是根据网易的写的..
                     Intent intent = new Intent(LoadActivity.this, PreViewActivity.class);
                     intent.putStringArrayListExtra(PreViewActivity.IMAGE, (ArrayList<String>) image);
                     intent.putExtra(PreViewActivity.POSITION, position);
