@@ -8,6 +8,24 @@
 
 ##### ![emmn](https://github.com/wenbinAndroid/imageadd/blob/master/sample/emmm.png)好像有点掉帧是吧.....
 
+##### 如何使用
+
+Step 1. Add the JitPack repository to your build file
+````
+Add it in your root build.gradle at the end of repositories:
+
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+Step 2. Add the dependency
+
+	dependencies {
+	        implementation 'com.github.wenbinAndroid:imageadd:v1.0.0'
+	}
+            ````
 #### 我只提供选择图片的功能,把使用什么图库和用什么框架来显示都交给了使用者,你可以随意的切换图库和图片加载框架,这2个并不冲突,我将添加图片的这个功能,分成了普通模式和加载网络图片的模式,两者的区别就是可编辑和不可编辑的.
 
 #### 使用方法
